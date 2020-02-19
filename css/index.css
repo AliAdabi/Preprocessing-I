@@ -144,11 +144,18 @@ header {
   display: flex;
   height: 80%;
 }
-.left {
+.whole .left {
   width: 30%;
   background-color: #E6E6FA;
 }
-.right {
+.whole .right {
   width: 70%;
   background-color: #F0E68C;
+}
+.whole .right .profile {
+  height: 20%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
 }
