@@ -130,6 +130,20 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ruda Regular'), local('Ruda-Regular'), url(https://fonts.gstatic.com/s/ruda/v11/k3kfo8YQJOpFqngdbQ.ttf) format('truetype');
+}
 html,
 body {
   height: 100%;
@@ -138,7 +152,17 @@ header {
   max-width: 100%;
   background-color: #E9967A;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 20%;
+}
+header h3 {
+  font-size: 50px;
+  font-family: 'Ruda', sans-serif;
+}
+header p {
+  font-family: 'Roboto Slab', serif;
 }
 .whole {
   display: flex;
@@ -153,9 +177,59 @@ header {
   background-color: #F0E68C;
 }
 .whole .right .profile {
-  height: 20%;
-  padding: 100px;
+  height: 25%;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-content: space-around;
+}
+.whole .right .profile h3 {
+  font-size: 30px;
+  font-family: 'Ruda', sans-serif;
+}
+.whole .right .profile p {
+  font-family: 'Roboto Slab', serif;
+}
+.whole .right .experience {
+  height: 20%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  height: 45%;
+}
+.whole .right .experience h3 {
+  font-size: 30px;
+  font-family: 'Ruda', sans-serif;
+}
+.whole .right .experience p {
+  font-family: 'Roboto Slab', serif;
+}
+.whole .right .education {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding-left: 50px;
+  height: 20%;
+}
+.whole .right .education h3 {
+  font-size: 30px;
+  font-family: 'Ruda', sans-serif;
+}
+.whole .right .education p {
+  font-family: 'Roboto Slab', serif;
+}
+.whole .right .awards {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding-left: 50px;
+  height: 10%;
+}
+.whole .right .awards h3 {
+  font-size: 30px;
+  font-family: 'Ruda', sans-serif;
+}
+.whole .right .awards p {
+  font-family: 'Roboto Slab', serif;
 }

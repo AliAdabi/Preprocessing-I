@@ -56,7 +56,9 @@ table {
 @header-color:#E9967A;
 @left-color:#E6E6FA;
 @right-color : #F0E68C;
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda&display=swap');
+@main-font:'Roboto Slab', serif;
+@h3-font:'Ruda', sans-serif;
 html, body {
 	height: 100%;
 	
@@ -66,7 +68,19 @@ header{
 	max-width: 100%;
 	background-color: @header-color;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 	height: 20%;
+
+	h3{
+		font-size: 50px;
+		font-family: @h3-font;
+		
+	}
+	p{
+	font-family: @main-font;
+	}
 	
 	
 
@@ -83,22 +97,78 @@ header{
 		background-color:@right-color;
 
 		.profile{
-			height: 20%;
-			padding : 100px;
+			height: 25%;
+			padding : 50px;
 			display: flex;
 			flex-direction: column;
 			align-content: space-around;
+			h3{
+				font-size: 30px;
+				font-family: @h3-font;
+				
+			}
+			p{
+			font-family: @main-font;
+			}
+		}
+
+			.experience{
+				
+					height: 20%;
+					padding-left : 50px;
+					display: flex;
+					flex-direction: column;
+					align-content: space-around;
+					height: 45%;
+					h3{
+						font-size: 30px;
+						font-family: @h3-font;
+						
+					}
+					p{
+					font-family: @main-font;
+					}
+					
 			
 			
+			
+		}
+		.education{
+					display: flex;
+					flex-direction: column;
+					align-content: space-around;
+					padding-left: 50px;
+					height: 20%;
+					h3{
+						font-size: 30px;
+						font-family: @h3-font;
+						
+					}
+					p{
+					font-family: @main-font;
+					}
+					
+		}
+		.awards{
+					display: flex;
+					flex-direction: column;
+					align-content: space-around;
+					padding-left: 50px;
+					height: 10%;
+					h3{
+						font-size: 30px;
+						font-family: @h3-font;
+						
+					}
+					p{
+					font-family: @main-font;
+					}
+					
 		}
 	
 	}
 }
 
 
-.whole nav{
-	
-	
-}
 
 
